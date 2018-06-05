@@ -1,0 +1,300 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/twitter-extractor#"
+     xml:base="http://www.semanticweb.org/twitter-extractor"
+     xmlns:twitter-extractor="http://www.semanticweb.org/twitter-extractor#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/twitter-extractor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/twitter-extractor#hasLiked -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/twitter-extractor#hasLiked">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/twitter-extractor#Tweet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/twitter-extractor#hasMention -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/twitter-extractor#hasMention">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter-extractor#Tweet"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/twitter-extractor#hasOriginalUser -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/twitter-extractor#hasOriginalUser">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter-extractor#Tweet"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/twitter-extractor#hasRetweet -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/twitter-extractor#hasRetweet">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/twitter-extractor#Tweet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/twitter-extractor#hasRetweeted -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/twitter-extractor#hasRetweeted">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/twitter-extractor#Tweet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/twitter-extractor#hasTweet -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/twitter-extractor#hasTweet">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/twitter-extractor#Tweet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/twitter-extractor#isFollowing -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/twitter-extractor#isFollowing">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/twitter-extractor#isInterested -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/twitter-extractor#isInterested">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/twitter-extractor#isNotFollowing -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/twitter-extractor#isNotFollowing">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/twitter-extractor#isNotInterested -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/twitter-extractor#isNotInterested">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/twitter-extractor#recommendedFollow -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/twitter-extractor#recommendedFollow">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/twitter-extractor#recommendedUnfollow -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/twitter-extractor#recommendedUnfollow">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/twitter-extractor#createdAt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/twitter-extractor#createdAt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter-extractor#Tweet"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/twitter-extractor#email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/twitter-extractor#email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/twitter-extractor#followersCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/twitter-extractor#followersCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/twitter-extractor#friendsCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/twitter-extractor#friendsCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/twitter-extractor#hashTag -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/twitter-extractor#hashTag">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter-extractor#Tweet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/twitter-extractor#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/twitter-extractor#id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter-extractor#Tweet"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/twitter-extractor#lastAccess -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/twitter-extractor#lastAccess">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/twitter-extractor#location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/twitter-extractor#location">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/twitter-extractor#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/twitter-extractor#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/twitter-extractor#profileImageUrl -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/twitter-extractor#profileImageUrl">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/twitter-extractor#screenName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/twitter-extractor#screenName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter-extractor#UserAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/twitter-extractor#text -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/twitter-extractor#text">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter-extractor#Tweet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/twitter-extractor#url -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/twitter-extractor#url">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter-extractor#Tweet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/twitter-extractor#Tweet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/twitter-extractor#Tweet">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/twitter-extractor#id"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/twitter-extractor#UserAccount -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/twitter-extractor#UserAccount">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/twitter-extractor#id"/>
+        </owl:hasKey>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
