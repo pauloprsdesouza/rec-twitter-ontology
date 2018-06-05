@@ -9,7 +9,7 @@ Two classes were created based on information obtained in the conceptualization 
   <p align="center"><b>Figure 1: Two classes were created.</b></p>
 </p>
 
-Figure \ref{fig:classes-ontology} shows the proposed ontology to annotate the information of Twitter users through two classes:
+Figure 1 shows the proposed ontology to annotate the information of Twitter users through two classes:
 
 * <b>UserAccount</b>: represents a Twitter user account with all properties and characteristics related to him.
 * <b>Tweet</b>: depicts a post published by one user, containing the information as for instance: text, url and hashtags.
