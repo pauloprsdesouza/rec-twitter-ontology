@@ -1,8 +1,8 @@
 <h1 align="center">RecTwitter Ontology</h1>
-A Twitter domain ontology was created for representing the extracted data from a Twitter user account. The building process of the Twitter ontology was based a development methodology called Methontology.
+This ontology was created to represent some entities of the Twitter domain in order to annotate the extracted data from a Twitter user account. The building process of the Twitter ontology was based on a development methodology called Methontology.
 
 
-# Classes
+## Classes
 Two classes were created based on information obtained from the conceptualization stage. Most terms have definitions, which have been described in notes. Figure 1 presents examples of the created classes.
 <p align="center">
   <img src="/images/class-ontology.png" width="500">
@@ -14,7 +14,7 @@ Figure 1 shows the proposed ontology to annotate the information of Twitter user
 * <b>UserAccount</b>: represents a Twitter user account with all properties and characteristics related to him.
 * <b>Tweet</b>: depicts a post published by one user, containing the information as for instance: text, url and hashtags.
 
-# Object Property
+## Object Property
 Object properties are used to relate an individual of a class with the individual of another class <a href="https://www.w3.org/TR/owl-features/">[W3C]</a>. In this case, <b>13</b> object properties were created from <i>Protegé</i> tool to help in semantic annotation of information about this context.
 
 <p align="center">
@@ -24,7 +24,7 @@ Object properties are used to relate an individual of a class with the individua
 
 The property <i>hasLiked</i>, for example, associates the individual of the <i>UserAccount</i> (domain) class with the individual of the <i>Tweet</i> (range) class. Thus, the action of liking a tweet is represented by the interaction <i>liked</i> as shown in Figure 2.
 
-# Datatype Property
+## Datatype Property
 Datatype properties are used to link an individual to a primitive value (string, int and others) <a href="https://www.w3.org/TR/owl-features/">[W3C]</a>. We created <b>13</b> datatype properties in <i>Protégé</i> tool. For instance: Date(<i>createdAt</i>), String (<i>email, name</i>) and others as shown in Figure 3.
 
 <p align="center">
