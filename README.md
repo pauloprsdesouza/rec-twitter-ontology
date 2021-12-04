@@ -1,9 +1,9 @@
 # The RecTwitter Ontology
-A Twitter domain ontology was created for representing the extracted data of based on a Twitter user account. The process of building the Twitter ontology was based a development methodology called Methontology.
+A Twitter domain ontology was created for representing the extracted data from a Twitter user account. The building process of the Twitter ontology was based a development methodology called Methontology.
 
 
 # Classes
-Two classes were created based on information obtained in the conceptualization stage. Most terms have definitions which have been described in notes. Figure 1 presents examples of the created classes.
+Two classes were created based on information obtained from the conceptualization stage. Most terms have definitions, which have been described in notes. Figure 1 presents examples of the created classes.
 <p align="center">
   <img src="/images/class-ontology.png" width="500">
   <p align="center"><b>Figure 1: Two classes were created.</b></p>
