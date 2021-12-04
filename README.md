@@ -1,4 +1,4 @@
-<h2 align="center">RecTwitter Ontology</h2>
+<h1 align="center">RecTwitter Ontology</h1>
 A Twitter domain ontology was created for representing the extracted data from a Twitter user account. The building process of the Twitter ontology was based a development methodology called Methontology.
 
 
